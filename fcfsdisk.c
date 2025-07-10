@@ -1,4 +1,4 @@
-include<stdio.h>
+#include<stdio.h>
 int head,a[20],i,distance,n,seektime;
 
 int main() {
