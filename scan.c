@@ -47,7 +47,6 @@ int main() {
 	if (pos > 0) {
     	printf("Head movement from %d to %d : %d\n", size - 1, a[pos - 1], size - 1 - a[pos - 1]);
     	seektime += size - 1 - a[pos - 1];
-
     	for (i = pos - 1; i > 0; i--) {
         	distance = a[i] - a[i - 1];
         	printf("Head movement from %d to %d : %d\n", a[i], a[i - 1], distance);
