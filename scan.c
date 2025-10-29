@@ -1,7 +1,5 @@
 #include <stdio.h>
-
 int head, a[20], i, distance, n, seektime, size;
-
 void bubbleSort(int arr[], int n) {
 	int temp;
 	for (int i = 0; i < n - 1; i++) {
@@ -14,7 +12,6 @@ void bubbleSort(int arr[], int n) {
     	}
 	}
 }
-
 int main() {
 	printf("\nEnter Head position: ");
 	scanf("%d", &head);
@@ -29,7 +26,6 @@ int main() {
 	a[n] = head;
 	n++;
 	bubbleSort(a, n);
-
 	int pos;
 	for (i = 0; i < n; i++) {
     	if (a[i] == head) {
@@ -37,7 +33,6 @@ int main() {
         	break;
     	}
 	}
-
 	printf("\n\tSCAN DISK SCHEDULING\n\n");
 	for (i = pos; i < n - 1; i++) {
     	distance = a[i + 1] - a[i];
@@ -59,7 +54,6 @@ int main() {
         	seektime += distance;
     	}
 	}
-
 	printf("\nTotal seek time is : %d\n", seektime);
 	return 0;
 }
