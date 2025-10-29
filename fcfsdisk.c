@@ -1,6 +1,5 @@
 #include<stdio.h>
 int head,a[20],i,distance,n,seektime;
-
 int main() {
 printf("\nEnter Head position: ");
 scanf("%d",&head);
@@ -10,7 +9,6 @@ printf("\nEnter the disk requests: ");
 for(i=1; i<=n; i++) {
 scanf("%d",&a[i]);
 }
-
 a[0]=head;
 printf("\n\tFCFS DISK SCHEDULING\n\n");
 for(i=0;i<n;i++) {
